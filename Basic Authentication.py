@@ -1,12 +1,12 @@
 # Example in Chapter 2, tweaked it to include two while loops to constantly ask users for
-# correct inputs (name and age) and then password. Loops break when correct inputs are received.
+# correct inputs (name: Jason, age: 24) and then password (swordfish). Loops break when correct inputs are received.
     
 # Set Loop and Loop2 as a boolean.
 Lp = True 
 Lp2 = True
-i = 0
+i = 0 # Counter for attempts made to name and age.
 n = 4
-j = 0
+j = 0 # Counter for attempts made to password.
 p = 4
 k = 0
     
@@ -65,15 +65,15 @@ while Lp:
     
     else:
         print ("Hello, Jason")
-        k = k + 1
+        k = k + 1 # Counter "k" is used to check whether the correct input has been received for password. If so, make k = 1.
         break
         
 # Use while loop Lp2 to determine whether an input provided by the user is correct.
 # If incorrect, display "Wrong Password" and ask for password again.
 # If correct, display message and break while loop.
-# If more than three additional attempts are made, Lp2 will not initialise.
+# If more than three additional attempts were made before in Lp1, Lp2 will not initialise.
 while Lp2:
-    if i >= 3 and k != 1:
+    if i >= 3 and k != 1: # if statement is used to check whether more than three attempts "i" have been made to name and age, and if a correct attempt "k" has been made within "i".
         break
     else:
         print ("Please enter your password, %s" % name)
@@ -95,10 +95,6 @@ while Lp2:
             
 # Comments:
 # - Variable age will output an error if a string is entered instead of an integer.
-#   Unsure of a way to circumvent this problem and to output a string "Age only accepts numbers.:
+#   Unsure of a way to circumvent this problem and to output a string "Age only accepts numbers.".
 # - Basic authentication system.
 
-            
-
-
-           
