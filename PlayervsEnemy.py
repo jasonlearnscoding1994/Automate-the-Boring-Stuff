@@ -3,7 +3,6 @@ import random
 playerHealth = 20
 enemyHealth = 10
 actions = ['attack', 'hit', 'strike']
-i = 0
 
 def caseStrip(word):
     action2 = word.lower()

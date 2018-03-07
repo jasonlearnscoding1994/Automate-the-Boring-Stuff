@@ -1,15 +1,15 @@
 # Example in Chapter 2, tweaked it to include two while loops to constantly ask users for
 # correct inputs (name: Jason, age: 24) and then password (swordfish). Loops break when correct inputs are received.
-    
+
 # Set Loop and Loop2 as a boolean.
-Lp = True 
+Lp = True
 Lp2 = True
 i = 0 # Counter for attempts made to name and age.
 n = 4
 j = 0 # Counter for attempts made to password.
 p = 4
 k = 0
-    
+
 # Use while loop Lp to determine whether an input provided by the user is correct.
 # If incorrect, ask for name and age again for three more times using "i" counter and "continue" before disabling system.
 # If correct, break the while loop and display message "Hello, Jason".
@@ -18,7 +18,7 @@ while Lp:
     name = input()
     print ("Please enter your age: ")
     age = int(input())
-       
+
     if name != 'Jason':
         if i == 3:
             print("Sytem disabled.")
@@ -29,7 +29,7 @@ while Lp:
             print ("You will be locked out of the system after %d more attempt(s)." % n)
             i = i + 1
             continue
-        
+
     elif age <= 12:
         if i == 3:
             print("Sytem disabled.")
@@ -40,7 +40,7 @@ while Lp:
             print ("You will be locked out of the system after %d more attempt(s)." % n)
             i = i + 1
         continue
-    
+
     elif age >= 50:
         if i == 3:
             print("Sytem disabled.")
@@ -51,7 +51,7 @@ while Lp:
             print ("You will be locked out of the system after %d more attempt(s)." % n)
             i = i + 1
         continue
-    
+
     elif age != 24:
         if i == 3:
             print("Sytem disabled.")
@@ -62,12 +62,12 @@ while Lp:
             print ("You will be locked out of the system after %d more attempt(s)." % n)
             i = i + 1
         continue
-    
+
     else:
         print ("Hello, Jason")
         k = k + 1 # Counter "k" is used to check whether the correct input has been received for password. If so, make k = 1.
         break
-        
+
 # Use while loop Lp2 to determine whether an input provided by the user is correct.
 # If incorrect, display "Wrong Password" and ask for password again.
 # If correct, display message and break while loop.
@@ -91,10 +91,9 @@ while Lp2:
         p = p - 1
         print ("You will be locked out of the system after %d more attempt(s)." % p)
         j = j + 1
-        continue    
-            
+        continue
+
 # Comments:
 # - Variable age will output an error if a string is entered instead of an integer.
 #   Unsure of a way to circumvent this problem and to output a string "Age only accepts numbers.".
 # - Basic authentication system.
-
