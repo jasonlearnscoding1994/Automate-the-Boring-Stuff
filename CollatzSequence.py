@@ -2,6 +2,8 @@
 # The program will keep calling the user integer input until the function collatz returns the value 1.
 
 print('Please enter a number: ')
+
+# Loop checks whehter an integer has been input by user. If not, print error, else break loop.
 while True:
     try:
         integer = int(input())
