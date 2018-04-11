@@ -1,7 +1,7 @@
 # Automate-the-Boring-Stuff
 Examples and exercises from the book Automate the Boring Stuff. README is used for keeping random notes.
 
-CollatzSequence.py:
+CollatzSequence.py (Chapter 3):
 - Wrote Collatz Sequence from Chapter 3 practical project to recalculate user input until the number one is returned.
 - Implemented try and except clauses into a Collatz Sequence to check whether user input is an integer.
 
